@@ -5,7 +5,7 @@ export PATH=$PATH:/usr/bin:/usr/local/bin:/sbin/
 
 ## CHECKDISK
 (sudo touch /forcefsck)&
-(sudo fsck /media/fat)&
+(sudo fsck -a /media/fat)&
 sleep 10s
 
 (cd /home/pi/raspiVideoSync && git pull)&
