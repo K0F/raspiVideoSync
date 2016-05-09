@@ -32,4 +32,4 @@ sleep 10s
 
 #(sleep 5s && omxplayer --loop --no-osd -b video.mp4 < /tmp/ctl)&
 
-
+(cp /home/pi/debug.txt /media/fat/)&
