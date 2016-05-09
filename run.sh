@@ -54,7 +54,7 @@ IP=sudo ifconfig | sed -En 's/127.0.0.1//;s/.*inet (addr:)?(([0-9]*\.){3}[0-9]*)
 ## PLAY ONCE
 (omxplayer -b -o local --no-osd /home/pi/raspiVideoSync/checker.mp4 < /tmp/ctl)&
 ## SENDER ONLY
-#(sleep 30s && /home/pi/send.sh )&
+(sleep 30s && /home/pi/raspiVideoSync/send.sh )&
 
 #############################################################################
 ## LOOPING
