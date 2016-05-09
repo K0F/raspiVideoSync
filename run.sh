@@ -16,9 +16,9 @@ sleep 10s
 ## LISTEN FOR SYNC
 (while true; do ((/bin/nc -luw0 7777) >> /tmp/ctl) ; done)&
 ## PLAY ONCE
-(omxplayer -b --loop --no-osd /home/pi/raspiVideoSync/checker.mp4 < /tmp/ctl)&
+(omxplayer -b --loop --no-osd /media/fat/video.mp4 < /tmp/ctl)&
 ## SENDER ONLY
-(sleep 30s && /home/pi/raspiVideoSync/send.sh )&
+(while true; do sleep 1h && /home/pi/raspiVideoSync/send.sh )&
 
 #############################################################################
 ## LOOPING
