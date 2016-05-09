@@ -49,7 +49,7 @@ IP=sudo ifconfig | sed -En 's/127.0.0.1//;s/.*inet (addr:)?(([0-9]*\.){3}[0-9]*)
 ## LISTEN FOR SYNC
 (while true; do ((/bin/nc -luw0 7777) >> /tmp/ctl) ; done)&
 ## PLAY ONCE
-(omxplayer -b -o local --no-osd /home/pi/checker.mp4 < /tmp/ctl)&
+(omxplayer -b -o local --no-osd /home/pi/raspiVideoSync/checker.mp4 < /tmp/ctl)&
 ## SENDER ONLY
 #(sleep 30s && /home/pi/send.sh )&
 
