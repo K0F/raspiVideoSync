@@ -5,6 +5,7 @@ export PATH=$PATH:/usr/bin:/usr/local/bin:/sbin/
 
 ## CHECKDISK
 (sudo touch /forcefsck)&
+(sudo touch /media/fat/forcefsck)&
 
 sleep 10s
 
