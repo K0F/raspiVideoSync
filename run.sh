@@ -17,7 +17,7 @@ sleep 10s
 ## PLAY ONCE
 (omxplayer -b --loop --no-osd /media/fat/video.mp4 < /tmp/ctl)&
 ## SENDER ONLY
-(sleep 5s && sh /home/pi/raspiVideoSync/send.sh )&
+(sleep 10s && sh /home/pi/raspiVideoSync/send.sh )&
 (while true; do sleep 1h && sh /home/pi/raspiVideoSync/send.sh; done )&
 
 #############################################################################
