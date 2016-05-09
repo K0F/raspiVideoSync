@@ -5,7 +5,6 @@ export PATH=$PATH:/usr/bin:/usr/local/bin:/sbin/
 
 ## CHECKDISK
 (sudo touch /forcefsck)&
-(sudo fsck -a /media/fat)&
 sleep 10s
 
 (cd /home/pi/raspiVideoSync && git pull)&
@@ -30,5 +29,5 @@ sleep 10s
 
 
 #(sleep 5s && omxplayer --loop --no-osd -b video.mp4 < /tmp/ctl)&
-
+(sudo fsck -a /media/fat)&
 (cp /home/pi/debug.txt /media/fat/)&
