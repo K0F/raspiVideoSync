@@ -11,7 +11,7 @@ sleep 10s
 (cd /home/pi/raspiVideoSync && git pull)&
 
 ## MAKE CONTROL FIFO
-(mkfifo /tmp/ctl)&
+mkfifo /tmp/ctl
 ## ONE SHOT VARIANT
 ## LISTEN FOR SYNC
 (while true; do ((/bin/nc -luw0 7777) >> /tmp/ctl) ; done)&
